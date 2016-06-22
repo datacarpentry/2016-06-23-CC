@@ -14,7 +14,7 @@ instructor: ["Cam Macdonell", "John Simpson"]   #(list of names like ["Kay McNul
 helper:     []   #(list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"])
 contact:     john.simpson@ualberta.ca    #(contact email address for workshop organizer)
 etherpad:    http://pad.software-carpentry.org/2016-06-23-CC    #(insert the URL for your Etherpad if you're using one)
-eventbrite:  26106298642 #(delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
+eventbrite:  #(delete this if not used, otherwise uncomment and provide 1234567890AB key for Eventbrite registration)
 day1_am: "Data organization in spreadsheets and OpenRefine"
 day1_pm: "Introduction to the Shell"
 day2_am: "Data analysis and visualization with Pandas"
@@ -45,6 +45,16 @@ day2_pm: "Git and Github"
   scrolling="auto">
 </iframe>
 {% endif %}
+
+<strong style="color:red">This workshop has been cancelled</strong>.
+
+<p>If you are interested in a Data Carpentry workshop at U of A, please mail
+  {% if page.contact %}
+    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
+  {% else %}
+    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
+  {% endif %}
+  to inquire about future events.
 
 <h2>General Information</h2>
 
